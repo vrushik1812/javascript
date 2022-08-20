@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assi4.css">
+</head>
+<body>
+  <title>
+    ASSIGNMENT 4
+  </title>
+  <div class="heading">
+    <h1>JAVASCRIPT ASSIGNMENT</h1>
+    <h3>Done by: PATEL VRUSHIK</h3>
+    <h3>ID: 2021KUEC2016</h3>
+     </div>
+<div id="ques1">✨ Question 1.</div>
+<div id="ques2">✨ Question 2.</div>
+<div id="ques3">✨ Question 3.</div>
+<div id="ques4">✨ Question 4.</div>
+<div id="ques5">✨ Question 5.</div>
+<div id="ques6">✨ Question 6.</div>
+<div id="ques7">✨ Question 7.</div>
+<div id="ques8">✨ Question 8.</div>
+<div id="ques9">✨ Question 9.</div>
+<div id="ques10">✨ Question 10.</div>
+<div id="ques11">✨ Question 11.</div>
+<div id="ques12">✨ Question 12.</div>
+<div id="ques13">✨ Question 13.</div>
+<div id="ques14">✨ Question 14.</div>
+<div id="ques15">✨ Question 15.</div>
+<div id="ques16">✨ Question 16.</div>
+<div id="ques17">✨ Question 17.</div>
+<div id="ques18">✨ Question 18.</div>
+<div id="ques19">✨ Question 19.</div>
+<div id="ques20">✨ Question 20.</div>
+
+<script>
+document.getElementById("ques1").onclick = function() {ques1()};
+document.getElementById("ques2").onclick = function() {ques2()};
+document.getElementById("ques3").onclick = function() {ques3()};
+document.getElementById("ques4").onclick = function() {ques4()};
+document.getElementById("ques5").onclick = function() {ques5()};
+document.getElementById("ques6").onclick = function() {ques6()};
+document.getElementById("ques7").onclick = function() {ques7()};
+document.getElementById("ques8").onclick = function() {ques8()};
+document.getElementById("ques9").onclick = function() {ques9()};
+document.getElementById("ques10").onclick = function() {ques10()};
+document.getElementById("ques11").onclick = function() {ques11()};
+document.getElementById("ques12").onclick = function() {ques12()};
+document.getElementById("ques13").onclick = function() {ques13()};
+document.getElementById("ques14").onclick = function() {ques14()};
+document.getElementById("ques15").onclick = function() {ques15()};
+document.getElementById("ques16").onclick = function() {ques16()};
+document.getElementById("ques17").onclick = function() {ques17()};
+document.getElementById("ques18").onclick = function() {ques18()};
+document.getElementById("ques19").onclick = function() {ques19()};
+document.getElementById("ques20").onclick = function() {ques20()};
+
+function ques1() {
+
+    var arr=[1,2,3,4,5,6,7,8,9,10];
+     var sum=0;
+     for(var i=0;i<10;i++){
+    sum=sum+arr[i];
+    }
+
+  document.write("The value of sum of first ten natural no is "+sum);
+    
+  
+}
+
+
+function ques2() {
+
+    let first = parseInt(prompt("ENTER FIRST NUMBER"));
+    let last = parseInt(prompt("ENTER LAST NUMBER"));
+var sum=0;
+for(var i=first+1;i<=last-1;i++)
+{
+sum=sum+i;
+}
+
+document.write(sum);
+
+}
+
+function ques3() {
+ var num=5;
+ var ans=0;
+
+ document.write("Table of 5 is:"); 
+    for(var i=1;i<=10;i++){
+   ans=num*i;
+  document.write(" "+ans);
+}
+}
+
+
+function ques4() {
+   
+    let num=prompt("enter the number");
+    var ans=0;
+
+    document.write("Table of given number is:"); 
+    for(var i=1;i<=10;i++){
+   ans=num*i;
+  document.write(" "+ans);
+}
+
+
+
+
+}
+
+function ques5() {
+
+    var num=prompt("Enter the value of number"); 
+    var digit=0;
+    var sum=0;
+   while(num!=0){
+        digit=num%10;
+        sum=sum+digit;
+        num=Math.floor(num/10);
+}
+   document.write("sum of digits is "+sum);
+
+}
+
+function ques6() {
+
+    var num=prompt("Enter the value of number");
+     var digit=0;
+     var arr=[];
+     var i=0;
+      document.write(" Given Number is "+num); 
+      while(num!=0)
+      {
+           digit=num%10;
+           arr[i]=digit;
+           i++;
+           num=Math.floor(num/10);
+      }
+    
+      document.write("\n Reverse Number is ");
+       for(var j=0;j<i;j++)
+      {
+        document.write(arr[j]);
+      }
+
+
+
+}
+
+function ques7() {
+
+    var arr=[0,1,2,3,4,5,6,7,8,9,10];
+  for(var i=1;i<10;i++)
+  {
+       if(arr[i]%2==0)
+       {
+         document.write(arr[i]);
+      }
+  }
+
+
+}
+
+function ques8() {
+        
+      var arr=[0];
+     let first=prompt("enter first number");
+     let last=prompt("enter last number");
+
+     
+
+     for(var i=first;i<last;i++)
+     {
+        arr.push(i);
+     }
+
+     for(var i=2;i<(last-first);i++)
+     {
+        if(arr[i]%2!==0)
+        {
+            document.write(arr[i]);
+        }
+     }
+
+
+}
+
+function ques9() {
+   var arr=[];
+ 
+  let first= parseInt(prompt("enter first number"));
+  let last= parseInt(prompt("enter last number"));
+  
+    for(var i=first+1;i<last;i++)
+    {
+     arr.push(i);
+    }
+ for(var i=0;i<(last-first)-1;i++){
+      if(arr[i]%3==0)
+      {
+       document.write(" "+arr[i]);
+      }
+ 
+}
+
+
+}
+
+function ques10() {
+
+
+    var arr=[];
+ 
+ let first= parseInt(prompt("enter first number"));
+ let last= parseInt(prompt("enter last number"));
+ 
+   for(var i=first+1;i<last;i++)
+   {
+    arr.push(i);
+   }
+for(var i=0;i<(last-first)-1;i++){
+     if(arr[i]%3!==0)
+     {
+      document.write(" "+arr[i]);
+     }
+
+}
+     
+
+}
+
+function ques11() {
+
+    let n = parseInt(prompt("Enter a number"));
+    document.write("Entered Number is "+n);
+    document.write("\n Double of the given number is "+n*2);
+}
+
+function ques12() {
+
+    var day=prompt("Enter the day");
+      document.write("Entered Day is "+day);
+      if(day=="sunday"||day=="saturday"){
+      document.write("\n It's a weekend");
+      }
+      else{
+      document.write("\n Not a weekend");
+     }
+
+
+}
+
+function ques13() {
+
+    var num=prompt("enter the value of number.");
+ {
+   var a=0;
+    var b=1;
+   document.write(a);
+   document.write(b);
+  for(var i=0;i<num-2;i++){
+  var c=a+b;
+  document.write("\n"+c);
+   a=b;
+   b=c;
+  }
+}
+
+
+
+}
+
+function ques14() {
+
+    let n=prompt("Enter Number ");
+
+    document.write("entered number is"+n);
+
+    document.write("\n Square of the number is "+n*n);
+    document.write("\n Cube Given Number is "+n*n*n);
+
+
+}
+
+function ques15() {
+
+   
+   
+}
+
+function ques16() {
+
+   let num1=prompt("Enter first Number ");
+   let num2=prompt("Enter Second Number");
+   let num3=prompt("Enter Third Number");
+  
+   
+    if(num1>num2 && num1>num3)
+     {
+         document.write(num1);
+     }
+      else if(num2>num1 && num2>num3)
+      {
+          document.write(num2);
+       }
+     else
+      {
+         document.write("Largest Number among all is "+num3);
+       }
+}
+
+
+function ques17() {
+
+    let num=prompt("Enter Number");
+     var sum=0;
+     for(var i=1;i<=num;i++){
+       sum=sum+i;
+      }
+
+      document.write("Sum till given Number is "+sum);
+
+
+}
+
+function ques18() {
+
+
+}
+
+function ques19() {
+
+
+    var num=prompt("Enter any data of your choice ");
+   if(isNaN(num)){
+   document.write(num+" is not a number ");
+    }
+  else{
+   document.write(num+" is a number ");
+  }
+}
+  
+
+function ques20() {
+
+    let num=prompt("Enter Number");
+    if(num>0){
+    document.write(num+"\n Is Positive");
+   }
+      else if(num==0){
+      document.write(num+" \n Is Zero")
+   }
+     else{
+      document.write(num+" \n Is Negative");
+   }
+}
+
+</script>
+
+</body>
+</html>
+
+
